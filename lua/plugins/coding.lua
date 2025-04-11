@@ -41,6 +41,13 @@ return {
       end
     end,
   },
+
+	{
+	  "williamboman/mason.nvim",
+		config = function()
+			require("mason").setup()
+		end
+	},
   
   -- Autocompletion
   {
@@ -98,12 +105,6 @@ return {
     end,
   },
 
-	{
-	    "williamboman/mason.nvim",
-		config = function()
-			require("mason").setup()
-		end
-	},
   
   -- Treesitter for better syntax highlighting
   {
